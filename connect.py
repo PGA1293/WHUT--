@@ -29,7 +29,7 @@ def Connect(username, password):
         'password': '{B}' + b64password
     }
     # requests.post(url=url, headers=headers, data=data)
-    # 想静默联网就把上一行取消注释，下面5行和最后4行注释掉或者去掉
+    # 想静默联网就把上一行取消注释，下面5行和最后2行注释掉或者去掉
     response = requests.post(url=url, headers=headers, data=data)
     if 'login_ok' in response.text:
         print('连接成功')
